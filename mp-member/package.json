@@ -1,0 +1,30 @@
+{
+  "name": "member-mp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "会员管理系统 · 微信小程序端（uni-app + Vue3 + TS）",
+  "scripts": {
+    "dev:mp-weixin": "uni build --platform mp-weixin --watch",
+    "build:mp-weixin": "uni build --platform mp-weixin",
+    "dev:h5": "uni",
+    "build:h5": "uni build"
+  },
+  "dependencies": {
+    "@dcloudio/uni-app": "3.0.0-4020920240930001",
+    "@dcloudio/uni-components": "3.0.0-4020920240930001",
+    "@dcloudio/uni-h5": "3.0.0-4020920240930001",
+    "@dcloudio/uni-mp-weixin": "3.0.0-4020920240930001",
+    "pinia": "^2.2.4",
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "@dcloudio/types": "^3.4.8",
+    "@dcloudio/uni-automator": "3.0.0-4020920240930001",
+    "@dcloudio/uni-cli-shared": "3.0.0-4020920240930001",
+    "@dcloudio/vite-plugin-uni": "3.0.0-4020920240930001",
+    "@vue/runtime-core": "^3.4.21",
+    "sass": "^1.79.4",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.8"
+  }
+}

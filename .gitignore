@@ -1,0 +1,36 @@
+# 依赖与构建产物
+node_modules/
+dist/
+target/
+# 仅忽略顶层 tools/（本地 Maven + Redis 便携包，46MB）；scripts/tools/ 是项目工具脚本，必须入库
+/tools/
+# Maven 依赖清单（mvn dependency:build-classpath 生成，供 scripts/tools 编译使用）
+backend/cp.txt
+# 开发期临时编译产物
+*.class
+
+# 日志与运行时数据
+logs/
+data/
+*.log
+
+# 本地环境与密钥（禁止入库）
+.env
+.env.local
+deploy/.env
+backend/src/main/resources/application-local.yml
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 前端自动生成的类型声明（由 unplugin 生成，可复现）
+web-admin/src/types/auto-imports.d.ts
+web-admin/src/types/components.d.ts

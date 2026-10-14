@@ -1,0 +1,120 @@
+:root {
+  --brand-primary: #1a73e8;
+  --brand-primary-light: #e8f0fe;
+  --brand-success: #34a853;
+  --brand-warning: #f29c1f;
+  --brand-danger: #ea4335;
+  --page-bg: #f5f7fa;
+  --card-radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', sans-serif;
+  background: var(--page-bg);
+  color: #303133;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Element Plus 主题色覆盖为品牌主色 */
+:root {
+  --el-color-primary: #1a73e8;
+  --el-color-primary-light-3: #5b9bf0;
+  --el-color-primary-light-5: #8bb8f5;
+  --el-color-primary-light-7: #bcd6fa;
+  --el-color-primary-light-8: #d4e4fc;
+  --el-color-primary-light-9: #e8f0fe;
+  --el-color-primary-dark-2: #155cba;
+}
+
+/* 通用页面容器 */
+.page-container {
+  padding: 16px;
+}
+
+.page-card {
+  background: #fff;
+  border-radius: var(--card-radius);
+  padding: 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.page-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* 金额展示：右对齐 + 等宽数字 */
+.amount {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+
+.amount-negative {
+  color: var(--brand-danger);
+}
+
+.amount-positive {
+  color: var(--brand-success);
+}
+
+.text-muted {
+  color: #909399;
+  font-size: 12px;
+}
+
+.mt-8 {
+  margin-top: 8px;
+}
+
+.mt-12 {
+  margin-top: 12px;
+}
+
+.mb-12 {
+  margin-bottom: 12px;
+}
+
+/* 表格紧凑模式 */
+.el-table .cell {
+  padding: 6px 8px;
+}
+
+/* 收银台大按钮（Pad 适配） */
+.cashier .el-button--large {
+  min-height: 52px;
+  font-size: 16px;
+}
+
+/* 滚动条美化 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c8c9cc;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a9ac;
+}
